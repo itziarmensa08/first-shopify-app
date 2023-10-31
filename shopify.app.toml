@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "my-app"
+client_id = "53931faf9287432f3d1640564f50c1f1"
+application_url = "https://finger-employer-parameter-trees.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://finger-employer-parameter-trees.trycloudflare.com/auth/callback",
+  "https://finger-employer-parameter-trees.trycloudflare.com/auth/shopify/callback",
+  "https://finger-employer-parameter-trees.trycloudflare.com/api/auth/callback",
+  "https://finger-employer-parameter-trees.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-2b06e6fe.myshopify.com"
